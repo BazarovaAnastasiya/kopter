@@ -7,16 +7,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/index.css">
+
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="dist/main.css">
   <title>phantom</title>
 </head>
 
 <body>
-
   <header class="header">
+    <nav class="header__menu">
+      <div class="header__menu-left">
+        <a class="header__logo logo" href="#">mars</a>
+        <a class="header__tel" href="tel:+#">+48 604 300 500</a>
+      </div>
+      <div class="header__menu-right"><a class="header__link" href="#">Buy now</a>
+        <span class="header__burger"></span></div>
+
+    </nav>
+    <div class="header__content">
+      <div class="header__left">
+        <!-- Swiper -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <h1 class="swiper-slide__title">PHANTOM</h1>
+              <p class="swiper-slide_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p class="swiper-slide__text">Quisque eget euismod
+                dolor. </p>
+            </div>
+            <div class="swiper-slide">
+              <h1 class="swiper-slide__title">PHANTOM</h1>
+              <p class="swiper-slide_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p class="swiper-slide__text">Quisque eget euismod
+                dolor. </p>
+            </div>
+            <div class="swiper-slide">
+              <h1 class="swiper-slide__title">PHANTOM</h1>
+              <p class="swiper-slide_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p class="swiper-slide__text">Quisque eget euismod
+                dolor. </p>
+            </div>
+            <div class="swiper-slide">
+              <h1 class="swiper-slide__title">PHANTOM</h1>
+              <p class="swiper-slide_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p class="swiper-slide__text">Quisque eget euismod
+                dolor. </p>
+            </div>
+          </div>
+
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+        <span class="header__schroll-text"> Schroll down</span>
+      </div>
+      <div class="header__dron"><img class="header__dron-img" src="aseets/img/dron.png" alt="image dron"></div>
+      <div class="header__right"></div>
+    </div>
+
+  </header>
+
+  <!-- <header class="header">
     <div class="header__schroll">
       <div class="header__schroll-circle">
         <div class="header__circle">
@@ -52,7 +104,7 @@
         <span class="header__burger"></span>
       </div>
     </div>
-  </header>
+  </header> -->
 
   <section class="higher">
     <div class="higher__copter">
@@ -121,6 +173,12 @@
     <a class="footer__logo logo" href="#">mars</a>
     <span class="footer__text">2016 Copyright. All rights reserved by Symu.co</span>
   </footer>
+  <!-- Swiper JS -->
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+
 </body>
+
 
 </html>
