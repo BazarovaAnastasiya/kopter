@@ -1,6 +1,29 @@
+.bodyStyle {
+  font-family: "Montserrat", sans-serif;
+  margin: 0 auto;
+  font-size: 10px;
+}
+.textLitle {
+  font-size: 1.4rem;
+  line-height: 2.1;
+  color: #92a1a5;
+}
+.titleFerst {
+  font-size: 6rem;
+  font-weight: bold;
+  line-height: 0.5;
+  text-transform: uppercase;
+  color: #000;
+}
+.position {
+  display: flex;
+  align-items: center;
+}
+html,
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0 auto;
+  font-size: 10px;
 }
 .header {
   position: relative;
@@ -37,7 +60,7 @@ body {
   font-weight: bold;
   line-height: 1.2;
   text-transform: uppercase;
-  color: secondaryColor;
+  color: #000;
 }
 .header__logo::before {
   content: "";
@@ -50,7 +73,7 @@ body {
   border: 4px solid #ff343d;
 }
 .header__tel {
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 2.1;
   color: #92a1a5;
 }
@@ -177,15 +200,15 @@ body {
   background: #ff343d;
 }
 .swiper-slide__title {
-  font-size: 60px;
+  font-size: 6rem;
   font-weight: bold;
   line-height: 0.5;
   text-transform: uppercase;
-  color: secondaryColor;
+  color: #000;
 }
 .swiper-slide__text {
   padding-right: 180px;
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 2.1;
   color: #92a1a5;
 }

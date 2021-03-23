@@ -3,9 +3,7 @@
 .header {
   position: relative;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  .flex(@flexDirection: column);
 
   overflow: hidden;
 
@@ -16,57 +14,52 @@
   &__menu {
     z-index: 2;
     position: relative;
-    top: 70px;
-    padding-left: 218px;
-    padding-right: 226px;
+    top: 7rem;
+    padding: 0 22rem;
     display: flex;
     justify-content: space-between;
     width: 100%;
   }
   &__menu-left {
-    display: flex;
-    align-items: center;
+    .flexCenter();
   }
   &__menu-right {
-    display: flex;
-    align-items: center;
+    .flexCenter();
   }
   &__logo {
     position: relative;
 
-    margin-right: 62px;
+    margin-right: 6rem;
 
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: bold;
     line-height: 1.2;
     text-transform: uppercase;
-    color: secondaryColor;
+    color: @secondaryColor;
     &::before {
       content: "";
       position: absolute;
       left: 105%;
 
       display: block;
-      width: 5px;
-      height: 5px;
+      width: 0.5rem;
+      height: 0.5rem;
       border-radius: 50%;
-      border: 4px solid @primaryColor;
+      border: 0.4rem solid @primaryColor;
     }
   }
   &__tel {
-    font-size: 14px;
-    line-height: 2.1;
-    color: #92a1a5;
+    .textLitle();
     &::before {
       content: "";
 
       display: inline-block;
 
-      width: 12px;
-      height: 12px;
-      margin-right: 8px;
+      width: 1.2rem;
+      height: 1.2rem;
+      margin-right: 0.8rem;
 
-      background-image: url(../../aseets/img/phone-icon.png);
+      background: url(../../aseets/img/phone-icon.png) no-repeat;
     }
   }
   &__link {
@@ -74,61 +67,57 @@
 
     margin-right: 38px;
 
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: bold;
     line-height: 1.9;
     text-transform: uppercase;
-    color: #fff;
+    color: @mainColor;
   }
   &__burger {
     z-index: 10;
     position: relative;
-    display: block;
-    width: 24px;
-    height: 2px;
-    background-color: #fff;
+
+    width: 2.5rem;
+    height: 0.2rem;
+    background-color: @mainColor;
 
     &::before {
       content: "";
 
       position: absolute;
-      top: -6px;
+      top: -0.6rem;
 
-      display: block;
-      width: 24px;
-      height: 2px;
+      width: 2.5rem;
+      height: 0.2rem;
 
-      background-color: #fff;
+      background-color: @mainColor;
     }
 
     &::after {
       content: "";
       position: absolute;
-      top: 6px;
+      top: 0.6rem;
 
-      display: block;
+      width: 2.5rem;
+      height: 0.2rem;
 
-      width: 24px;
-      height: 2px;
-
-      background-color: #fff;
+      background-color: @mainColor;
     }
   }
   &__content {
-    display: flex;
+    .flex(@flexDirection: row);
     min-width: 0;
     width: 100%;
-    justify-content: space-between;
   }
   &__left {
-    padding: 400px 0 0 200px;
+    padding-left: 20rem;
   }
   &__schroll-text {
     position: absolute;
-    left: 155px;
-    bottom: 115px;
+    left: 15.5rem;
+    bottom: 15.5rem;
     transform: rotate(-90deg);
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: bold;
     color: #000;
   }
@@ -138,16 +127,17 @@
     top: 20%;
     left: 60%;
 
-    transform: translateX(-55%);
+    transform: translateX(-50%);
 
-    width: 652px;
-    height: 652px;
+    width: 65rem;
+    height: 65rem;
     border-radius: 50%;
 
-    background-color: #fff;
+    background-color: @mainColor;
   }
   &__dron-img {
     position: relative;
+    top: 6%;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -155,7 +145,7 @@
     position: relative;
     top: -35px;
     height: 100vh;
-    max-width: 770px;
+    max-width: 77rem;
     flex-basis: 45%;
     overflow: hidden;
 
@@ -164,19 +154,19 @@
       content: "MARS";
 
       position: absolute;
-      top: 3.5rem;
-      right: -7rem;
+      top: 6.5rem;
+      right: -10rem;
       bottom: 0;
       transform: rotate(90deg);
 
       display: block;
       height: 100%;
 
-      font-size: 388px;
+      font-size: 39rem;
       font-weight: bold;
-      text-shadow: 0 0 55px rgba(0, 1, 1, 0.15);
+      text-shadow: 0 0 5.5rem rgba(0, 1, 1, 0.15);
       text-transform: uppercase;
-      color: #ff343d;
+      color: @primaryColor;
     }
   }
 }

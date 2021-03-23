@@ -1,8 +1,12 @@
-// out: ../dist/main.css, compress: false, sourceMap: true
+// out: ../dist/main.min.css, compress: true, sourceMap: true
 @import "./_variables.less";
+@import "./_mixins.less";
+
+html,
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0 auto;
+  font-size: 10px;
 }
 @import "./blocks/_header.less";
 @import "./blocks/_swiper.less";

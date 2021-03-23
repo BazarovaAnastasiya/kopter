@@ -1,0 +1,24 @@
+// main: ./main.less
+
+.textLitle() {
+  font-size: 1.4rem;
+  line-height: 2.1;
+  color: #92a1a5;
+}
+.titleFerst() {
+  font-size: @primaryTitleSize;
+  font-weight: bold;
+  line-height: 0.5;
+  text-transform: uppercase;
+  color: @secondaryColor;
+}
+.flexCenter() {
+  display: flex;
+  align-items: center;
+}
+.flex(@flexDirection; @justifyContent: space-between; @align-items: center) {
+  display: flex;
+  flex-direction: @flexDirection;
+  justify-content: @justifyContent;
+  align-items: @align-items;
+}
