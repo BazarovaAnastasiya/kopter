@@ -1,0 +1,33 @@
+// main: ./../main.less
+
+.flying {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 50%;
+    padding: 33rem 0 0 20rem;
+  }
+  &__text-title {
+    margin-bottom: 6.2rem;
+  }
+
+  &__btn {
+    border: solid 0.2rem #eff2f6;
+    margin-bottom: 23rem;
+  }
+  &__img {
+    flex-basis: 50%;
+    position: relative;
+  }
+
+  &__img-img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+}
