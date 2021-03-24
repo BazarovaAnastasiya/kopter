@@ -3,12 +3,12 @@
 .header {
   position: relative;
 
-  .flex(@flexDirection: column);
+  .flexColumn();
 
   overflow: hidden;
 
   width: 100%;
-  height: 100vh;
+  height: 99vh;
 
   background-color: #eff2f6;
   &__menu {
@@ -28,28 +28,9 @@
   }
   &__logo {
     position: relative;
-
     margin-right: 6rem;
-
-    font-size: 2.4rem;
-    font-weight: bold;
-    line-height: 1.2;
-    text-transform: uppercase;
-    color: @secondaryColor;
-    &::before {
-      content: "";
-      position: absolute;
-      left: 105%;
-
-      display: block;
-      width: 0.5rem;
-      height: 0.5rem;
-      border-radius: 50%;
-      border: 0.4rem solid @primaryColor;
-    }
   }
   &__tel {
-    .textLitle();
     &::before {
       content: "";
 
@@ -59,7 +40,7 @@
       height: 1.2rem;
       margin-right: 0.8rem;
 
-      background: url(../../aseets/img/phone-icon.png) no-repeat;
+      background: url("@{img}phone-icon.png") no-repeat;
     }
   }
   &__link {
@@ -105,21 +86,24 @@
     }
   }
   &__content {
-    .flex(@flexDirection: row);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     min-width: 0;
     width: 100%;
   }
   &__left {
     padding-left: 20rem;
   }
-  &__schroll-text {
+  &__schroll {
     position: absolute;
     left: 15.5rem;
     bottom: 15.5rem;
     transform: rotate(-90deg);
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: #000;
+    border: none;
+    &:focus {
+      outline: transparent;
+    }
   }
   &__dron {
     z-index: 5;

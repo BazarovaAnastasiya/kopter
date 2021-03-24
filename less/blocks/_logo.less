@@ -1,0 +1,19 @@
+//main: ./../main.less
+.logo {
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: @secondaryColor;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 105%;
+
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    border: 0.4rem solid @primaryColor;
+  }
+}

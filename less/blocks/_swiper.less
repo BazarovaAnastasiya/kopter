@@ -7,11 +7,12 @@
 }
 .swiper-slide {
   /* Center slide text vertically */
-  .flex(@flexDirection: column; @justifyContent: flex-start; @align-items: flex-start);
+  display: flex;
+  flex-direction: column;
 }
 .swiper-container-vertical > .swiper-pagination-bullets {
   left: 0;
-  top: 30%;
+  top: 40%;
 }
 .swiper-container-vertical
   > .swiper-pagination-bullets
@@ -23,10 +24,4 @@
 .swiper-pagination-bullet-active {
   font-size: 0.7rem;
   background: @primaryColor;
-}
-.swiper-slide__title {
-  .titleFerst();
-}
-.swiper-slide__text {
-  .textLitle();
 }

@@ -4,7 +4,7 @@ body {
   margin: 0 auto;
 }
 
-
+/* 
 .header {
   position: relative;
 
@@ -217,7 +217,7 @@ body {
   height: 2px;
 
   background-color: #fff;
-}
+} */
 
 .higher {
   display: flex;
