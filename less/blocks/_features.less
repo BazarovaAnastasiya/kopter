@@ -1,0 +1,36 @@
+//main: ./../main.less
+
+.features {
+  .flexCenter();
+  flex-direction: column;
+
+  padding: 125px 0 275px;
+  &__title {
+    margin-bottom: 118px;
+
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: @secondaryColor;
+  }
+  &__wrapper {
+    .flexCenter;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+  }
+  &__feature {
+    .flexCenter;
+    flex-direction: column;
+    flex-basis: 25%;
+  }
+  &__feture-img {
+    margin-bottom: 7rem;
+  }
+  &__feature-text {
+    font-size: 30px;
+    line-height: 2;
+    text-align: center;
+    color: @secondaryColor;
+  }
+}
