@@ -1,34 +1,36 @@
 //main: ./../main.less
 
 .features {
-  .flexCenter();
-  flex-direction: column;
+  &:extend(.flexColumn,
+  .flexCenter);
 
-  padding: 125px 0 275px;
+  padding: 12.5rem 0 27.5rem;
   &__title {
-    margin-bottom: 118px;
+    margin-bottom: 11.8rem;
 
-    font-size: 48px;
+    font-size: 4.8rem;
     font-weight: bold;
     line-height: 1.2;
     color: @secondaryColor;
   }
   &__wrapper {
-    .flexCenter;
-    flex-wrap: wrap;
+    &:extend(.flexCenter);
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 80%;
   }
   &__feature {
-    .flexCenter;
-    flex-direction: column;
+    &:extend(.flexColumn,
+    .flexCenter);
+    min-width: 30rem;
     flex-basis: 25%;
   }
   &__feture-img {
     margin-bottom: 7rem;
   }
   &__feature-text {
-    font-size: 30px;
+    font-size: 3rem;
+    font-weight: 600;
     line-height: 2;
     text-align: center;
     color: @secondaryColor;

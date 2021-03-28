@@ -1,8 +1,7 @@
 // main: ./../main.less
 
 .vision {
-  display: flex;
-  justify-content: space-between;
+  &:extend(.flex);
   overflow: hidden;
   &__photo {
     flex-basis: 50%;
@@ -13,8 +12,8 @@
   }
   &__content {
     position: relative;
-    display: flex;
-    flex-direction: column;
+
+    &:extend(.flexColumn);
     align-items: flex-start;
     flex-basis: 50%;
     padding: 18rem 0 0 13rem;
@@ -27,7 +26,7 @@
   &__btn {
     border: solid 0.2rem #3b3b3b;
     background-color: #232323;
-    color: #fff;
+    color: @mainColor;
     margin-bottom: 18rem;
   }
   &__icon {

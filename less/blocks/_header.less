@@ -2,33 +2,31 @@
 
 .header {
   position: relative;
-
   .flexColumn();
-  justify-content: space-between;
-
-  overflow: hidden;
 
   width: 100%;
   height: 1032px;
-
   background-color: #eff2f6;
+
+  overflow: hidden;
   &__menu {
     z-index: 2;
     position: relative;
-    top: 7rem;
-    padding: 0 22rem;
+    top: 6rem;
+
     display: flex;
     justify-content: space-between;
     width: 100%;
+
+    padding: 0 22rem;
   }
   &__menu-left {
-    .flexCenter();
+    &:extend(.flexCenter);
   }
   &__menu-right {
-    .flexCenter();
+    &:extend(.flexCenter);
   }
   &__logo {
-    position: relative;
     margin-right: 6rem;
   }
   &__tel {
@@ -36,22 +34,21 @@
       content: "";
 
       display: inline-block;
-
       width: 1.2rem;
       height: 1.2rem;
-      margin-right: 0.8rem;
 
+      margin-right: 0.8rem;
       background: url("@{img}phone-icon.png") no-repeat;
     }
   }
   &__link {
     z-index: 1;
-
     margin-right: 38px;
 
     font-size: 1.6rem;
     font-weight: bold;
     line-height: 1.9;
+
     text-transform: uppercase;
     color: @mainColor;
   }
@@ -87,9 +84,10 @@
     }
   }
   &__content {
-    display: flex;
-    justify-content: space-between;
+    &:extend(.flex);
     align-items: center;
+    justify-content: space-between;
+
     min-width: 0;
     width: 100%;
     height: 80vh;
@@ -101,6 +99,7 @@
     position: absolute;
     left: 18.5rem;
     bottom: 15.5rem;
+
     transform: rotate(-90deg);
     border: none;
     &:focus {
@@ -110,6 +109,7 @@
   &__dron {
     z-index: 5;
     position: absolute;
+
     top: 20%;
     left: 60%;
 
@@ -125,23 +125,26 @@
     position: relative;
     top: 6%;
     left: 50%;
+
     transform: translateX(-50%);
   }
   &__right {
     position: relative;
     top: -35px;
     height: 100vh;
+
     max-width: 77rem;
     flex-basis: 45%;
-    overflow: hidden;
 
     background-color: #ff343d;
+    overflow: hidden;
+
     &::before {
       content: "MARS";
 
       position: absolute;
-      top: 31px;
-      right: 1rem;
+      top: 5rem;
+      right: 0;
       bottom: 0;
       transform: rotate(90deg);
 

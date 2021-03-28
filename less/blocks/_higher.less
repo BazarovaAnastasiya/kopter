@@ -1,11 +1,10 @@
 // main: ./../main.less
 
 .higher {
-  display: flex;
-  justify-content: space-between;
+  &:extend(.flex);
 
   &__copter {
-    .flexColumn();
+    &:extend(.flexColumn);
     align-items: center;
     justify-content: center;
 
@@ -15,7 +14,7 @@
     background-size: cover;
   }
   &__coptr-title {
-    margin-bottom: 11px;
+    margin-bottom: 1.1rem;
   }
   &__flying {
     position: relative;
@@ -25,11 +24,11 @@
   &__flying-box {
     position: absolute;
 
-    display: flex;
+    &:extend(.flexCenter);
+    justify-content: center;
+
     width: 50%;
     height: 99%;
-    align-items: center;
-    justify-content: center;
 
     background-color: @secondaryColor;
     opacity: 0.7;

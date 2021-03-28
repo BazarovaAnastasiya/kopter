@@ -1,6 +1,7 @@
 // out: ../dist/main.min.css, compress: true, sourceMap: true
-@import "./_variables.less";
-@import "./_mixins.less";
+
+@import "./abstract/_variables.less";
+@import "./abstract/_mixins.less";
 
 html,
 body {
@@ -9,13 +10,18 @@ body {
   font-size: 10px;
 }
 
-@import "./blocks/_title.less";
-@import "./blocks/_text.less";
-@import "./blocks/_logo.less";
+//---components/
+@import "./components/_logo.less";
+@import "./components/_btn.less";
+@import "./components/_title.less";
+@import "./components/_text.less";
+
+//---layot---/
 @import "./blocks/_header.less";
 @import "./blocks/_swiper.less";
 @import "./blocks/_higher.less";
-@import "./blocks/_btn.less";
 @import "./blocks/_features.less";
 @import "./blocks/_vision.less";
 @import "./blocks/_flying.less";
+@import "./blocks/_start.less";
+@import "./blocks/_footer.less";

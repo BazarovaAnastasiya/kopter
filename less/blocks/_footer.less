@@ -1,0 +1,23 @@
+//main: ./../main.less
+
+.footer {
+  position: relative;
+  &:extend(.flexColumn);
+  align-items: center;
+
+  padding: 19.8rem 0;
+  &::after {
+    content: "PHANTOM";
+    position: absolute;
+    z-index: -1;
+
+    font-size: 20.3rem;
+    font-weight: bold;
+    line-height: 0.5;
+    text-shadow: 0.8rem 1.4rem 9.5rem rgba(0, 0, 0, 0.05);
+    color: @mainColor;
+  }
+  &__logo {
+    margin-bottom: 34px;
+  }
+}

@@ -1,4 +1,4 @@
-// main: ./main.less
+// main: ./../main.less
 
 // .textLitle() {
 //   font-size: 1.4rem;
@@ -12,17 +12,20 @@
 //   text-transform: uppercase;
 //   color: @secondaryColor;
 // }
-.flexCenter() {
+
+.flex {
+  display: flex;
+}
+.flexCenter {
   display: flex;
   align-items: center;
 }
-// .flex(@flexDirection; @justifyContent: space-between; @align-items: center) {
-//   display: flex;
-//   flex-direction: @flexDirection;
-//   justify-content: @justifyContent;
-//   align-items: @align-items;
-// }
 .flexColumn {
   display: flex;
   flex-direction: column;
+}
+
+.flexDi(@justifyConten: space-between) {
+  display: flex;
+  justify-content: @justifyConten;
 }
