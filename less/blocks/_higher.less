@@ -8,13 +8,14 @@
     align-items: center;
     justify-content: center;
 
-    flex-basis: 30%;
+    flex-basis: 32%;
 
     background-image: url("@{img}photo-bg.png");
     background-size: cover;
   }
   &__coptr-title {
     margin-bottom: 1.1rem;
+    padding-left: 91px;
   }
   &__flying {
     position: relative;
@@ -27,23 +28,33 @@
     &:extend(.flexCenter);
     justify-content: center;
 
-    width: 50%;
+    width: 45%;
     height: 99%;
 
     background-color: @secondaryColor;
     opacity: 0.7;
   }
   &__flying-title {
-    flex-basis: 60%;
+    flex-basis: 76%;
   }
   &__flying-img {
     width: 100%;
   }
   &__flying-btn {
     position: absolute;
-    right: 15%;
-    top: 50%;
+    right: 10%;
+    top: 45%;
 
     transform: rotate(-90deg);
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      right: 192px;
+      top: 25px;
+      width: 215px;
+      height: 1px;
+      background-color: #fff;
+    }
   }
 }
